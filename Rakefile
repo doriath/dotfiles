@@ -2,7 +2,7 @@ require 'rake'
 require 'erb'
 
 desc "install the dot files into user's home directory"
-task :install do
+task :install => :oh_my_zsh do
   replace_all = false
   Dir['*'].each do |file|
     next if %w[Rakefile README.rdoc LICENSE].include? file
@@ -30,6 +30,13 @@ task :install do
       link_file(file)
     end
   end
+end
+
+desc "install oh-my-zsh"
+task :oh_my_zsh do
+  system %Q{curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh}
+  system %Q{rm -rf "$HOME/.oh-my-zsh/custom"}
+  system %Q{ln -s "$PWD/.oh-my-zsh/custom" "$HOME/.oh-my-zsh/custom"}
 end
 
 def replace_file(file)

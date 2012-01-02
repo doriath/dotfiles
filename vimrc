@@ -89,3 +89,6 @@ set guioptions-=T
 let g:CommandTMatchWindowAtTop=1
 
 set noantialias
+
+set wildignore+=doc/app
+set wildignore+=tmp/
