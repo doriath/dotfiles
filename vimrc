@@ -1,4 +1,5 @@
 set nocompatible               " be iMproved
+filetype on
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
@@ -71,6 +72,8 @@ map <A-q> :cclose<CR>
 map <C-j> :cnext<CR>
 map <C-k> :cprevious<CR>
 
+map <leader>r :CommandTBuffer<CR>
+
 " NERDTree mapping
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
 
@@ -91,4 +94,9 @@ let g:CommandTMatchWindowAtTop=1
 set noantialias
 
 set wildignore+=doc/app
-set wildignore+=tmp/
+set wildignore+=tmp
+set wildignore+=spec/reports
+set wildignore+=features/reports
+set wildignore+=coverage
+
+set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P

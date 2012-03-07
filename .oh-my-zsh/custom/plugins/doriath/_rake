@@ -4,6 +4,7 @@ if [[ -f Rakefile ]]; then
     local recent=$(ls -t .rake_tasks~ Rakefile **/*.rake | head -n 1)
   fi
   if [[ $recent != .rake_tasks~ ]]; then
+    rm .rake_tasks~
     rake --tasks | cut -d " " -f 2 > .rake_tasks~
   fi
   compadd $(cat .rake_tasks~)

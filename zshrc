@@ -29,9 +29,11 @@ ZSH_THEME="doriath"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew gem bundler doriath)
+plugins=(git brew gem bundler osx doriath vundle)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+export LESSCHARSET="utf-8"
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
