@@ -13,11 +13,11 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'ervandew/supertab'
-Bundle 'rails.vim'
 Bundle 'bufexplorer.zip'
 Bundle 'vividchalk.vim'
 Bundle 'Command-T'
@@ -100,3 +100,5 @@ set wildignore+=features/reports
 set wildignore+=coverage
 
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+
+set tags+=gems.tags
