@@ -14,6 +14,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-markdown'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-ruby/vim-ruby'
@@ -102,3 +103,5 @@ set wildignore+=coverage
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
 set tags+=gems.tags
+
+au BufRead,BufNewFile *.hamlc set ft=haml
