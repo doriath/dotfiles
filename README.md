@@ -2,7 +2,7 @@
 
 ## Installation
 
-```shell
+```
 $ git clone https://github.com/doriath/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
 $ ./install
