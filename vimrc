@@ -49,6 +49,9 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+" Write .swp files into ~/.vim/cache
+set dir=~/.vim/cache//
+
 " Mark syntax errors with :signs
 let g:syntastic_enable_signs=1
 let g:loaded_cucumber_syntax_checker=1
