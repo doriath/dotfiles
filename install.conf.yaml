@@ -9,4 +9,4 @@
       force: true
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - ['sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"', Installing oh-my-zsh]
+  - ['git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh', Installing oh-my-zsh]
