@@ -9,4 +9,4 @@
       force: true
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - ['git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh', Installing oh-my-zsh]
+  - ['if [ ! -d "$HOME/.oh-my-zsh" ]; then git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh; fi', Installing oh-my-zsh]
