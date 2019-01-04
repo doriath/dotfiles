@@ -17,4 +17,9 @@ Plug 'prabirshrestha/vim-lsp'
 
 Plug 'leafgarland/typescript-vim'
 
+Plug 'jonsmithers/vim-html-template-literals'
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
