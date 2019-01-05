@@ -2,5 +2,6 @@
 .svn
 *~
 .*.swp
+.netrwhist
 vim/autoload/plug.vim
 vim/plugged

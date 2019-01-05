@@ -1,4 +1,4 @@
-" Vim LSP
+" vim-lsp
 let g:lsp_signs_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
 
@@ -10,3 +10,9 @@ if executable('typescript-language-server')
           \ 'whitelist': ['typescript', 'typescript.tsx'],
           \ })
 endif
+
+" vim-codefmt
+augroup autoformat_settings
+  autocmd FileType c,cpp,proto AutoFormatBuffer clang-format
+  autocmd FileType html,css,json AutoFormatBuffer js-beautify
+augroup END

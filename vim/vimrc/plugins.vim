@@ -22,4 +22,12 @@ Plug 'jonsmithers/vim-html-template-literals'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+Plug 'google/vim-glaive'
+
+Plug 'ervandew/supertab'
+
 call plug#end()
+
+call glaive#Install()
