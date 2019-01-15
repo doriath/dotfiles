@@ -1,1 +1,1 @@
-nnoremap <C-T> :GFiles<CR>
+nnoremap <C-P> :GFiles<CR>
