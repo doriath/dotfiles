@@ -28,6 +28,12 @@ Plug 'google/vim-glaive'
 
 Plug 'ervandew/supertab'
 
+Plug 'takac/vim-hardtime'
+
+Plug 'tpope/vim-fugitive'
+
+Plug 'tpope/vim-surround'
+
 call plug#end()
 
 call glaive#Install()

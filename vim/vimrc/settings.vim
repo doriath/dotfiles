@@ -36,3 +36,6 @@ set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
 " Write .swp files into ~/.vim/cache
 set dir=~/.vim/cache//
+
+" Relative line numbers
+set relativenumber

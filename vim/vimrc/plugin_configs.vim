@@ -16,3 +16,6 @@ augroup autoformat_settings
   autocmd FileType c,cpp,proto AutoFormatBuffer clang-format
   autocmd FileType html,css,json AutoFormatBuffer js-beautify
 augroup END
+
+" vim-hardtime
+let g:hardtime_default_on = 1
