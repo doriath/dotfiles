@@ -34,6 +34,8 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'tpope/vim-surround'
 
+Plug 'markonm/traces.vim'
+
 call plug#end()
 
 call glaive#Install()
