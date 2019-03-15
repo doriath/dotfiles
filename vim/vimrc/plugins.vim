@@ -12,8 +12,10 @@ Plug 'tpope/vim-sensible'
 
 Plug 'jlanzarotta/bufexplorer'
 
+Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 Plug 'leafgarland/typescript-vim'
 
@@ -33,6 +35,8 @@ Plug 'takac/vim-hardtime'
 Plug 'tpope/vim-fugitive'
 
 Plug 'tpope/vim-surround'
+
+Plug 'tpope/vim-commentary'
 
 Plug 'markonm/traces.vim'
 
