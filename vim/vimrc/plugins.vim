@@ -28,7 +28,7 @@ Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
 
-Plug 'ervandew/supertab'
+" Plug 'ervandew/supertab'
 
 Plug 'takac/vim-hardtime'
 
@@ -39,6 +39,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 
 Plug 'markonm/traces.vim'
+
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 

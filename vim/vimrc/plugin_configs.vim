@@ -39,11 +39,12 @@ let g:lsp_log_verbose = $DEBUG_VIM_LSP
 let g:lsp_log_file = expand('~/vim-lsp.log')
 
 " asyncomplete
-" noremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-" inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
 imap <c-space> <Plug>(asyncomplete_force_refresh)
-let g:asyncomplete_smart_completion = 1
+" Disabled because it doesn't work when vim is not compiled with lua support.
+" let g:asyncomplete_smart_completion = 1
 let g:asyncomplete_auto_popup = 1
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
