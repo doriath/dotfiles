@@ -35,7 +35,7 @@ if executable('rls')
       \ })
 endif
 
-let g:lsp_log_verbose = $DEBUG_VIM_LSP
+let g:lsp_log_verbose = 2
 let g:lsp_log_file = expand('~/vim-lsp.log')
 
 " asyncomplete
