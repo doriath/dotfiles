@@ -9,13 +9,13 @@ function! WrapLspTee(command) abort
      return 'lsp-tee -- ' . a:command
     endif
     return a:command
-  fi
+  endif
   if type(a:command) == type([])
     if $LSP_TEE
      return ['lsp-tee', '-- '] + a:command
     endif
     return a:command
-  fi
+  endif
 endfunction
 
 if executable('typescript-language-server')
