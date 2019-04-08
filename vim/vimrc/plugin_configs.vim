@@ -12,7 +12,7 @@ function! WrapLspTee(command) abort
   endif
   if type(a:command) == type([])
     if $LSP_TEE
-     return ['lsp-tee', '-- '] + a:command
+     return ['lsp-tee', '--'] + a:command
     endif
     return a:command
   endif
