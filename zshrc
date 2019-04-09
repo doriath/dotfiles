@@ -82,3 +82,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export VISUAL=vim
 autoload edit-command-line; zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
+
+export TERM=screen-256color
