@@ -4,4 +4,4 @@ nnoremap <leader>lc :LspCodeAction<CR>
 nnoremap <leader>lf :LspDocumentFormat<CR>
 nnoremap <leader>lr :LspRename<CR>
 nnoremap <leader>gs :Gstatus<CR>
-nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gc :Gcommit -a<CR>
