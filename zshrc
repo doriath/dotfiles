@@ -84,3 +84,5 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
 export TERM=screen-256color
+
+export PATH="$HOME/bin:$PATH"

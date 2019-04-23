@@ -27,6 +27,14 @@ if executable('typescript-language-server')
           \ })
 endif
 
+if executable('typescript-language-server')
+  au User lsp_setup call lsp#register_server({
+          \ 'name': 'vimscript-language-server',
+          \ 'cmd': {server_info->WrapLspTee(['vimscript-language-server'])},
+          \ 'whitelist': ['vim'],
+          \ })
+endif
+
 if executable('rls')
   au User lsp_setup call lsp#register_server({
       \ 'name': 'rls',
