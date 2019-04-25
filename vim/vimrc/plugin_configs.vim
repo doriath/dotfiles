@@ -64,3 +64,6 @@ augroup END
 
 " vim-hardtime
 let g:hardtime_default_on = 0
+
+" bufexplorer
+let g:bufExplorerShowRelativePath=1  " Show relative paths.
