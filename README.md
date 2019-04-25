@@ -7,7 +7,7 @@
 ```
 $ git clone https://github.com/doriath/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
-$ ./install
+$ ./install.sh
 ```
 
 ### ZSH
@@ -49,5 +49,3 @@ chsh -s /bin/zsh
 
 Note that the install script is idempotent: it can safely be run multiple
 times.
-
-Dotfiles uses [Dotbot][dotbot] for installation.
