@@ -1,3 +1,4 @@
+let mapleader = ","
 nnoremap <C-P> :GFiles<CR>
 vnoremap <leader>lc :LspCodeAction<CR>
 nnoremap <leader>lf :LspDocumentFormat<CR>
