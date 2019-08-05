@@ -8,3 +8,8 @@ nnoremap <leader>lp :LspPreviousError<CR>
 nnoremap <leader>lh :LspHover<CR>
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gc :Gcommit -a<CR>
+
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l

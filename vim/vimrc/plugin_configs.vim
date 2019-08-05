@@ -27,7 +27,7 @@ if executable('typescript-language-server')
           \ })
 endif
 
-if executable('typescript-language-server')
+if executable('vimscript-language-server')
   au User lsp_setup call lsp#register_server({
           \ 'name': 'vimscript-language-server',
           \ 'cmd': {server_info->WrapLspTee(['vimscript-language-server'])},
