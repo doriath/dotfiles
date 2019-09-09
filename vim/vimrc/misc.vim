@@ -15,3 +15,5 @@ function! XTermPasteBegin()
   set paste
   return ""
 endfunction
+
+autocmd BufEnter * :syntax sync fromstart

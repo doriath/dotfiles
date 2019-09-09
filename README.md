@@ -61,3 +61,9 @@ sudo apt-get install make libncurses5-dev lua5.1 liblua5.1-dev
 ./configure --with-features=huge --enable-luainterp=yes --enable-fail-if-missing
 make
 ```
+
+## Install language servers
+
+```
+npm install -g typescript-language-server
+```
