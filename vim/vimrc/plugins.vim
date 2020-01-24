@@ -34,6 +34,8 @@ Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
 
 " Plug 'ervandew/supertab'
+"
+Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'takac/vim-hardtime'
 

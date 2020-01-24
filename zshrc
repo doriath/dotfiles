@@ -14,7 +14,7 @@ bindkey -M vicmd v edit-command-line
 export PROMPT="%~> "
 
 # PATH
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:$PATH:/usr/local/go/bin"
 
 # Aliases
 alias ls='ls --color=auto'
