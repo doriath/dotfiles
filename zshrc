@@ -14,9 +14,12 @@ bindkey -M vicmd v edit-command-line
 export PROMPT="%~> "
 
 # PATH
-export PATH="$HOME/bin:$PATH:/usr/local/go/bin"
+export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH:/usr/local/go/bin"
 
 # Aliases
 alias ls='ls --color=auto'
 
 export TERM=screen-256color
+
+# Load local
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
