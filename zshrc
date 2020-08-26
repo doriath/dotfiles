@@ -16,6 +16,9 @@ export PROMPT="%~> "
 # PATH
 export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH:/usr/local/go/bin"
 
+export HISTFILE=~/.histfile
+export SAVEHIST=10000
+
 # Aliases
 alias ls='ls --color=auto'
 
@@ -23,3 +26,16 @@ export TERM=screen-256color
 
 # Load local
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+# Up/Down keys will do prefix matching
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey '^[[A' history-beginning-search-backward-end
+bindkey '^[OA' history-beginning-search-backward-end
+bindkey '^[[B' history-beginning-search-forward-end
+bindkey '^[OB' history-beginning-search-forward-end
+
+# Share history across terminals
+setopt inc_append_history
+setopt share_history
