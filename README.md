@@ -52,6 +52,14 @@ chsh -s /bin/zsh
 Note that the install script is idempotent: it can safely be run multiple
 times.
 
+## Install tmux
+
+```
+sudo apt-get install tmux
+```
+
+To install plugins, press `CTRL+a I`.
+
 ## Install vim
 
 https://github.com/vim/vim/blob/master/src/INSTALL
