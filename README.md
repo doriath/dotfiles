@@ -5,9 +5,9 @@
 ### Dotfiles
 
 ```
-$ git clone https://github.com/doriath/dotfiles.git ~/.dotfiles
-$ cd ~/.dotfiles
-$ ./install.sh
+git clone https://github.com/doriath/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+./install.sh
 ```
 
 ### ZSH
@@ -46,6 +46,8 @@ Make zsh your default shell.
 chsh -s /bin/zsh
 ```
 
+(or edit /etc/passwd to change the default shell for given user).
+
 
 Note that the install script is idempotent: it can safely be run multiple
 times.
@@ -60,6 +62,14 @@ sudo apt-get update
 sudo apt-get install make libncurses5-dev lua5.1 liblua5.1-dev
 ./configure --with-features=huge --enable-luainterp=yes --enable-fail-if-missing
 make
+sudo make install
+```
+
+## Install node
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+nvm install --lts
 ```
 
 ## Install language servers
