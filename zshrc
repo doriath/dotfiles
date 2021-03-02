@@ -39,3 +39,9 @@ bindkey '^[OB' history-beginning-search-forward-end
 # Share history across terminals
 setopt inc_append_history
 setopt share_history
+
+# Load Git completion
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+fpath=(~/.zsh $fpath)
+
+autoload -Uz compinit && compinit

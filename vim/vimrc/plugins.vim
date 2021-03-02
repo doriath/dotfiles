@@ -49,6 +49,8 @@ Plug 'markonm/traces.vim'
 
 Plug 'morhetz/gruvbox'
 
+Plug 'nathangrigg/vim-beancount'
+
 call plug#end()
 
 call glaive#Install()

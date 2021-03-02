@@ -59,8 +59,8 @@ https://github.com/vim/vim/blob/master/src/INSTALL
 ```
 git clone https://github.com/vim/vim.git
 sudo apt-get update
-sudo apt-get install make libncurses5-dev lua5.1 liblua5.1-dev
-./configure --with-features=huge --enable-luainterp=yes --enable-fail-if-missing
+sudo apt-get install make libncurses5-dev lua5.1 liblua5.1-dev python3-dev
+./configure --with-features=huge --enable-luainterp=yes --enable-fail-if-missing --enable-python3interp
 make
 sudo make install
 ```
