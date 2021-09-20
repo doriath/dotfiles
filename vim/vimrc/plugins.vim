@@ -51,6 +51,10 @@ Plug 'morhetz/gruvbox'
 
 Plug 'nathangrigg/vim-beancount'
 
+Plug 'rr-/vim-hexdec'
+
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
 
 call glaive#Install()

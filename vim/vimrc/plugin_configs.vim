@@ -35,16 +35,17 @@ if executable('vimscript-language-server')
           \ })
 endif
 
-if executable('rls')
+if executable('rust-analyzer')
   au User lsp_setup call lsp#register_server({
-      \ 'name': 'rls',
-      \ 'cmd': {server_info->WrapLspTee(['rustup', 'run', 'stable', 'rls'])},
+      \ 'name': 'rust',
+      \ 'cmd': {server_info->WrapLspTee(['rust-analyzer'])},
       \ 'whitelist': ['rust'],
       \ })
 endif
 
-let g:lsp_log_verbose = 2
-let g:lsp_log_file = expand('~/vim-lsp.log')
+" Uncomment when debugging LSP
+" let g:lsp_log_verbose = 2
+" let g:lsp_log_file = expand('~/vim-lsp.log')
 
 " asyncomplete
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
