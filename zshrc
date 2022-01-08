@@ -18,6 +18,7 @@ export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH:/usr/local/go/bin"
 
 export HISTFILE=~/.histfile
 export SAVEHIST=10000
+export HISTSIZE=10000
 
 # Aliases
 alias ls='ls --color=auto'
