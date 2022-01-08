@@ -11,8 +11,3 @@ nnoremap <leader>gs :Git<CR>
 nnoremap <leader>gc :Git commit -a<CR>
 
 nnoremap <leader>h :Dec2Hex<CR>
-
-nmap <C-h> <C-w>h
-nmap <C-j> <C-w>j
-nmap <C-k> <C-w>k
-nmap <C-l> <C-w>l
