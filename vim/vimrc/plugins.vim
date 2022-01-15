@@ -55,6 +55,8 @@ Plug 'rr-/vim-hexdec'
 
 Plug 'rust-lang/rust.vim'
 
+Plug 'google/vim-jsonnet'
+
 call plug#end()
 
 call glaive#Install()
