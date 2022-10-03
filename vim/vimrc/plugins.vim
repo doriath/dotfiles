@@ -57,6 +57,8 @@ Plug 'rust-lang/rust.vim'
 
 Plug 'google/vim-jsonnet'
 
+Plug 'LnL7/vim-nix'
+
 call plug#end()
 
 call glaive#Install()

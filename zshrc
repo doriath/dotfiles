@@ -46,3 +46,9 @@ zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 fpath=(~/.zsh $fpath)
 
 autoload -Uz compinit && compinit
+
+alias caps='/usr/bin/setxkbmap -option "caps:escape"'
+
+eval "$(direnv hook zsh)"
+
+autoload -U +X bashcompinit && bashcompinit
