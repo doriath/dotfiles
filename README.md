@@ -10,27 +10,13 @@ cd ~/.dotfiles
 ./install.sh
 ```
 
+### Nix
+
+```
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+```
+
 ### ZSH
-
-#### OS X
-
-Install zsh and zsh completions using homebrew for most up to date zsh.
-
-```
-brew install zsh zsh-completions
-```
-
-Make zsh your default shell.
-
-```
-sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
-```
-
-Or just use OS X included zsh.
-
-```
-chch -s /bin/zsh
-```
 
 #### Linux
 
@@ -52,25 +38,39 @@ chsh -s /bin/zsh
 Note that the install script is idempotent: it can safely be run multiple
 times.
 
+#### OS X
+
+Install zsh and zsh completions using homebrew for most up to date zsh.
+
+```
+brew install zsh zsh-completions
+```
+
+Make zsh your default shell.
+
+```
+sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+```
+
+Or just use OS X included zsh.
+
+```
+chch -s /bin/zsh
+```
+
+
 ## Install tmux
 
 ```
-sudo apt-get install tmux
+nix profile install tmux
 ```
 
 To install plugins, press `CTRL+a I`.
 
 ## Install vim
 
-https://github.com/vim/vim/blob/master/src/INSTALL
-
 ```
-git clone https://github.com/vim/vim.git
-sudo apt-get update
-sudo apt-get install make libncurses5-dev lua5.1 liblua5.1-dev python3-dev
-./configure --with-features=huge --enable-luainterp=yes --enable-fail-if-missing --enable-python3interp
-make
-sudo make install
+nix profile install vim
 ```
 
 ## Install node

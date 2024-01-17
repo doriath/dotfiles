@@ -59,6 +59,8 @@ Plug 'google/vim-jsonnet'
 
 Plug 'LnL7/vim-nix'
 
+Plug 'editorconfig/editorconfig-vim'
+
 call plug#end()
 
 call glaive#Install()

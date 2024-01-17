@@ -52,3 +52,4 @@ alias caps='/usr/bin/setxkbmap -option "caps:escape"'
 eval "$(direnv hook zsh)"
 
 autoload -U +X bashcompinit && bashcompinit
+bindkey "^X^E" edit-command-line
