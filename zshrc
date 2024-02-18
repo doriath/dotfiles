@@ -49,7 +49,15 @@ autoload -Uz compinit && compinit
 
 alias caps='/usr/bin/setxkbmap -option "caps:escape"'
 
-eval "$(direnv hook zsh)"
+if command -v zoxide &> /dev/null
+then
+  eval "$(direnv hook zsh)"
+fi
 
 autoload -U +X bashcompinit && bashcompinit
 bindkey "^X^E" edit-command-line
+
+if command -v zoxide &> /dev/null
+then
+  eval "$(zoxide init zsh)"
+fi

@@ -85,3 +85,9 @@ nvm install --lts
 ```
 npm install -g typescript-language-server
 ```
+
+## Install zoxide
+
+```
+nix profile install zoxide
+```
